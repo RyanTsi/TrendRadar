@@ -118,7 +118,7 @@ rss:
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
-      enabled: false                  # 禁用
+      # enabled: false                  # 禁用
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -249,7 +249,7 @@ notification:
   #   • 正常窗口：start < end，如 09:00-21:00（当天 9 点到 21 点）
   #   • 跨日窗口：start > end，如 22:00-02:00（当天 22 点到次日 2 点）
   push_window:
-    enabled: false                     # 是否启用推送时间窗口控制
+    enabled: true                     # 是否启用推送时间窗口控制
     start: "08:50"                    # 开始时间（北京时间）
     end: "22:20"                      # 结束时间（北京时间）
     once_per_day: false               # true=窗口内只推送一次，false=窗口内每次执行都推送
@@ -452,7 +452,7 @@ ai_analysis:
   mode: "follow_report"
 
   # 分析内容配置
-  max_news_for_analysis: 60         # 参与分析的新闻数量上限（控制成本关键项）
+  max_news_for_analysis: 150        # 参与分析的新闻数量上限（控制成本关键项）
                                     # 推送消息顶部会显示实际的 AI 分析数供参考
 
                                     # api 成本估算 (仅供参考)
